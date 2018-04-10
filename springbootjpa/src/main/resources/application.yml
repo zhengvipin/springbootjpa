@@ -1,0 +1,23 @@
+# **************服务器配置**************#
+server:
+# 修改端口号
+  port: 8086
+# 自定义上下文路径
+  servlet:
+    context-path:
+
+# **************spring配置**************#
+spring:
+# 数据源
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/employee?useSSL=true&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+# jpa
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none #update
+
+# **************mybatis配置**************#
